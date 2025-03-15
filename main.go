@@ -92,7 +92,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 	mu.Unlock()
 
-	fmt.Fprintf(w, "Requests in last 60 seconds: %d\n", count)
+	fmt.Fprintf(w, "Request accepted. Total requests in 60s window: %d\n", count)
 }
 
 // Healthz check handler
