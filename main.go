@@ -37,7 +37,7 @@ func createDirectory(filePath string) {
 
 // Load saved requests from file
 func loadRequests() {
-	createDirectoryIfNeeded(dataFile)
+	createDirectory(dataFile)
 
 	file, err := os.Open(dataFile)
 	if err != nil {
